@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_marginBottom="@dimen/x18"
+    android:layout_marginTop="@dimen/x18"
+    android:layout_marginLeft="@dimen/x12"
+    android:layout_marginRight="@dimen/x12"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x170"
+    android:layout_height="@dimen/y250"
+    android:background="@mipmap/ic_integral_bg">
+
+    <TextView
+        android:id="@+id/tv_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y75"
+        android:text="第一天"
+        android:textColor="@color/primaryPink"
+        android:textSize="@dimen/x30"/>
+
+    <TextView
+        android:id="@+id/tv_integral_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x30"
+        android:text="積分"
+        android:textColor="@color/primaryBlue"
+        android:layout_alignBottom="@+id/tv_integral_num"
+        android:layout_marginBottom="@dimen/x10"
+        android:textSize="@dimen/x25"/>
+
+    <TextView
+        android:id="@+id/tv_integral_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_day"
+        android:textColor="@color/primaryBlue"
+        android:layout_toLeftOf="@+id/tv_integral_text"
+        android:layout_marginRight="@dimen/x5"
+        android:text="1"
+        android:layout_marginTop="@dimen/y10"
+        android:gravity="bottom"
+        android:textSize="@dimen/x60"/>
+</RelativeLayout>

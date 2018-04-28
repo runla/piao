@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_grey_100_color_code">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/include_title"></include>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/date_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="68dp"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.89"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="505dp"/>
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/address_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.23"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="130dp"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/type_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.34"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="193dp"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/ali_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.53"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="301dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_wechat_pay"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/y135"
+        android:background="@drawable/ripple_white"
+        android:padding="@dimen/y25"
+        app:layout_constraintLeft_toLeftOf="@+id/vertical_left_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_right_guideline"
+        app:layout_constraintTop_toTopOf="@+id/ali_guideline">
+
+        <ImageView
+            android:id="@+id/iv_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:src="@mipmap/pic_wechat_pay"/>
+
+        <View
+            android:id="@+id/view_dot_wechat"
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/x40"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x30"
+            android:background="@drawable/selector_dot"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_ali_pay"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/y135"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ripple_white"
+        android:gravity="center_vertical"
+        android:padding="@dimen/y25"
+        app:layout_constraintLeft_toLeftOf="@+id/vertical_left_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_right_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/rl_wechat_pay">
+
+        <ImageView
+            android:id="@+id/iv_alipay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:src="@mipmap/pic_alipay"/>
+
+        <View
+            android:id="@+id/view_dot_alipay"
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/x40"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x30"
+            android:background="@drawable/selector_dot"/>
+    </RelativeLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_left_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.09"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="0dp"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_right_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"
+        tools:layout_editor_absoluteX="324dp"
+        tools:layout_editor_absoluteY="0dp"/>
+
+    <TextView
+        android:id="@+id/tv_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日期"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_date"
+        app:layout_constraintLeft_toLeftOf="@+id/vertical_left_guideline"
+        app:layout_constraintTop_toTopOf="@+id/tv_date"/>
+
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/y135"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/shape_text_white_bg"
+        android:gravity="center"
+        android:text="2018-04-04"
+        android:textColor="@color/primaryPink"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_date_text"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_right_guideline"
+        app:layout_constraintTop_toTopOf="@+id/date_guideline"/>
+
+
+    <TextView
+        android:id="@+id/tv_address_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="地點"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_address"
+        app:layout_constraintLeft_toLeftOf="@+id/vertical_left_guideline"
+        app:layout_constraintTop_toTopOf="@+id/tv_address"/>
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/y135"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/shape_text_white_bg"
+        android:gravity="center"
+        android:text="百老匯購物中心"
+        android:textColor="@color/primaryPink"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_address_text"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_right_guideline"
+        app:layout_constraintTop_toTopOf="@+id/address_guideline"/>
+
+    <TextView
+        android:id="@+id/tv_ticket_type_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="票型"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rl_ticket_type"
+        app:layout_constraintLeft_toLeftOf="@+id/vertical_left_guideline"
+        app:layout_constraintTop_toTopOf="@+id/rl_ticket_type"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_ticket_type"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/y135"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/shape_text_white_bg"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_ticket_type_text"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_right_guideline"
+        app:layout_constraintTop_toTopOf="@+id/type_guideline">
+
+        <TextView
+            android:id="@+id/tv_ticket_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/normal_fee"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_ticket_normal_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_ticket_normal_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="￥1200"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+        <!--<View
+            android:id="@+id/mid_line"
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:layout_centerVertical="true"
+            android:background="@color/primaryBlue"/>
+
+        <TextView
+            android:id="@+id/tv_ticket_special"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/mid_line"
+            android:gravity="center"
+            android:text="@string/special_fee"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_ticket_special_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/mid_line"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_ticket_special_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/mid_line"
+            android:gravity="center"
+            android:text="￥1200"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>-->
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_ticket_limit"
+        android:layout_width="@dimen/x90"
+        android:layout_height="@dimen/y100"
+        android:layout_marginBottom="@dimen/y65"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_ticket_limit"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/rl_ticket_type"
+        app:layout_constraintLeft_toLeftOf="@+id/rl_ticket_type"
+        app:layout_constraintTop_toTopOf="@+id/rl_ticket_type"/>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/primaryBlue"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline10">
+
+        <TextView
+            android:id="@+id/tv_total_fee_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/tv_total_fee"
+            android:layout_alignTop="@+id/tv_total_fee"
+            android:gravity="center"
+            android:text="@string/total_fee"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tv_total_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_total_fee_text"
+            android:gravity="center_vertical"
+            android:text="$111"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"/>
+
+        <Button
+            android:id="@+id/btn_go_to_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ripple_white"
+            android:padding="10dp"
+            android:text="@string/go_to_pay"
+            android:textColor="@color/primaryBlue"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

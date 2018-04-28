@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="@dimen/x1020"
+        android:layout_height="@dimen/y405"
+        android:src="@mipmap/pic_item_normal_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontal_guideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_left_guideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.23"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_right_guideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.88"/>
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/y7"
+        android:background="@color/md_grey_300_color_code"
+        app:layout_constraintBottom_toBottomOf="@+id/horizontal_guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/vertical_left_guideline"
+        app:layout_constraintRight_toRightOf="@+id/vertical_right_guideline"/>
+
+    <TextView
+        android:id="@+id/tv_activity_topic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y15"
+        android:layout_marginLeft="@dimen/x13"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:text="蠟筆小新我們的美好時光（澳門特展）"
+        android:textSize="@dimen/x40"
+        app:layout_constraintBottom_toTopOf="@+id/line"
+        app:layout_constraintLeft_toLeftOf="@+id/line"
+        app:layout_constraintRight_toRightOf="@+id/line"/>
+
+    <!--<ImageView
+        android:id="@+id/iv_bear"
+        android:layout_width="@dimen/x79"
+        android:layout_height="@dimen/y92"
+        android:layout_marginLeft="@dimen/x25"
+        android:src="@mipmap/pic_bear"
+        app:layout_constraintBottom_toBottomOf="@+id/horizontal_guideline"
+        app:layout_constraintLeft_toLeftOf="@+id/line" />-->
+
+    <ImageView
+        android:id="@+id/iv_ticket_type"
+        android:layout_width="@dimen/x192"
+        android:layout_height="@dimen/y122"
+        android:layout_marginLeft="@dimen/x33"
+        android:src="@mipmap/pic_ticket_type_early"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tv_activity_tip"
+        app:layout_constraintLeft_toRightOf="@+id/iv_ticket_icon"
+        app:layout_constraintTop_toBottomOf="@+id/line"/>
+
+    <ImageView
+        android:id="@+id/iv_order_used"
+        android:layout_width="@dimen/y149"
+        android:layout_height="@dimen/y149"
+        android:layout_marginRight="@dimen/x100"
+        android:src="@mipmap/ic_order_is_used"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tv_activity_tip"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line"/>
+
+    <TextView
+        android:id="@+id/tv_activity_tip"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/y15"
+        android:gravity="center_vertical"
+        android:text="入場時請出示二維碼掃描"
+        android:textSize="@dimen/x30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_order_num"
+        app:layout_constraintRight_toRightOf="@+id/tv_order_num"
+        app:layout_constraintTop_toBottomOf="@+id/tv_order_no"/>
+
+    <ImageView
+        android:id="@+id/iv_ticket_icon"
+        android:layout_width="@dimen/x70"
+        android:layout_height="@dimen/x70"
+        android:src="@mipmap/ic_order_ticket_norma"
+        android:tint="@color/primaryYellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/line"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55"/>
+
+    <TextView
+        android:id="@+id/tv_order_date"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginTop="@dimen/y15"
+        android:gravity="center_vertical"
+        android:text="購票日期：2018/02/05"
+        android:textSize="@dimen/x33"
+        app:layout_constraintBottom_toTopOf="@+id/tv_order_num"
+        app:layout_constraintLeft_toRightOf="@+id/iv_ticket_type"
+        app:layout_constraintRight_toLeftOf="@+id/iv_order_used"
+        app:layout_constraintTop_toBottomOf="@+id/line"/>
+
+    <TextView
+        android:id="@+id/tv_order_num"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/x20"
+        android:gravity="center_vertical"
+        android:text="數量：1"
+        android:textSize="@dimen/x33"
+        app:layout_constraintBottom_toTopOf="@+id/tv_order_no"
+        app:layout_constraintLeft_toRightOf="@+id/iv_ticket_type"
+        app:layout_constraintRight_toLeftOf="@+id/iv_order_used"
+        app:layout_constraintTop_toBottomOf="@+id/tv_order_date"/>
+
+    <TextView
+        android:id="@+id/tv_order_no"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/x20"
+        android:gravity="center_vertical"
+        android:text="訂單編號#00001111"
+        android:textSize="@dimen/x33"
+        app:layout_constraintBottom_toTopOf="@+id/tv_activity_tip"
+        app:layout_constraintLeft_toRightOf="@+id/iv_ticket_type"
+        app:layout_constraintRight_toLeftOf="@+id/iv_order_used"
+        app:layout_constraintTop_toBottomOf="@+id/tv_order_num"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/include_title"></include>
+
+    <RelativeLayout
+        android:id="@+id/linear_topic"
+        android:layout_width="@dimen/x1020"
+        android:layout_height="@dimen/y405"
+        android:layout_below="@+id/title"
+        android:background="@mipmap/pic_item_normal_bg"
+        android:paddingLeft="@dimen/x50">
+
+
+        <ImageView
+            android:id="@+id/iv_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/x38"
+            android:layout_marginRight="@dimen/x40"
+            android:layout_marginTop="@dimen/y60"
+            android:paddingLeft="@dimen/x110"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/pic_shop_tem_bg"/>
+
+        <ImageView
+            android:layout_width="@dimen/x70"
+            android:layout_height="@dimen/x70"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_order_shop"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_shop_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x100"
+        android:layout_marginRight="@dimen/x90"
+        android:text="輕鬆熊輕鬆熊輕鬆熊輕鬆熊輕鬆熊輕鬆熊輕鬆熊"
+        android:textColor="@color/md_grey_700_color_code"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x100"
+        android:layout_marginRight="@dimen/x100"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_shop_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="$12"
+            android:textColor="@color/primaryPink"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tv_shop_transport_type"
+            android:layout_width="@dimen/x150"
+            android:layout_height="@dimen/y65"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_text_blue_stroke"
+            android:gravity="center"
+            android:text="顺丰"
+            android:textColor="@color/primaryBlue"
+            android:textSize="@dimen/x40"/>
+
+        <TextView
+            android:id="@+id/tv_shop_change"
+            android:layout_width="@dimen/x150"
+            android:layout_height="@dimen/y65"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_text_blue_stroke"
+            android:gravity="center"
+            android:text="退换"
+            android:textColor="@color/primaryBlue"
+            android:textSize="@dimen/x40"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_shop_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x100"
+        android:text="颜色：棕色"/>
+
+    <TextView
+        android:id="@+id/tv_shop_total_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x100"
+        android:layout_marginTop="@dimen/y20"
+        android:text="共 1 件商品 合计 $35（不含运费）"/>
+
+    <TextView
+        android:id="@+id/tv_buyer_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x100"
+        android:layout_marginTop="@dimen/y20"
+        android:text="李雷：13631234444"/>
+
+
+    <TextView
+        android:id="@+id/tv_shop_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x100"
+        android:layout_marginTop="@dimen/y20"
+        android:text="收货地址：北京市王府井....."/>
+
+    <TextView
+        android:id="@+id/tv_shop_pay_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x100"
+        android:layout_marginTop="@dimen/y20"
+        android:text="付款时间：2018/12/11"/>
+
+    <TextView
+        android:id="@+id/tv_shop_out_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x100"
+        android:layout_marginTop="@dimen/y20"
+        android:text="发货时间：2018/05/08"/>
+
+    <TextView
+        android:id="@+id/tv_shop_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x100"
+        android:layout_marginTop="@dimen/y20"
+        android:text="订单编号：#201111"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x100"
+        android:layout_marginRight="@dimen/x100"
+        android:layout_marginTop="@dimen/y20"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_transport_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="运单单号：654654643432"/>
+
+        <TextView
+            android:id="@+id/tv_copy"
+            android:layout_width="@dimen/x150"
+            android:layout_height="@dimen/y65"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_text_blue_stroke"
+            android:gravity="center"
+            android:text="@string/copy"
+            android:textColor="@color/primaryBlue"
+            android:textSize="@dimen/x40"/>
+    </LinearLayout>
+</LinearLayout>

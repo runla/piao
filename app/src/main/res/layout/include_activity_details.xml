@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_top_bg_white"
+    android:orientation="vertical"
+    android:tag="BottomSheet"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="@dimen/y550"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_activity_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x40"
+                android:layout_marginLeft="@dimen/x80"
+                android:layout_marginRight="@dimen/x80"
+                android:layout_marginTop="?attr/actionBarSize"
+                tools:text="据美国《国会山》日报4月9日报道，特朗普说，“如果我们能与中国达成协议，但假如在这个谈判过程中中方认为通过对部分农业产品征加关税可以向我施压，我不会说这是件好事。但我告诉你们，我们的农民是伟大的爱国者。”"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"/>
+
+            <ImageView
+                android:id="@+id/iv_acitivity_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_activity_description"
+                android:layout_alignRight="@+id/tv_activity_description"
+                android:layout_below="@+id/tv_activity_description"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="15dp"
+                tools:src="@mipmap/pic_buy_ticket"/>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</FrameLayout>

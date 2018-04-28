@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple
+    android:color="@color/md_grey_400_color_code"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--显示默认的 drawable-->
+    <item android:drawable="@drawable/shape_text_white_bg" />
+
+    <!--匹配默认值的波纹效果剪切遮罩-->
+    <item
+        android:id="@android:id/mask"
+        android:drawable="@drawable/shape_text_white_bg" />
+</ripple>

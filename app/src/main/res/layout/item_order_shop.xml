@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="@dimen/x1020"
+        android:layout_height="@dimen/y405"
+        android:src="@mipmap/pic_item_normal_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontal_guideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.39"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_left_guideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.16"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_mid_guideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.47"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_right_guideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.91"/>
+
+    <ImageView
+        android:id="@+id/iv_shop_picture"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/y25"
+        android:layout_marginTop="@dimen/y55"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/pic_buy_ticket"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_bg"
+        app:layout_constraintLeft_toRightOf="@+id/vertical_left_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_mid_guideline"
+        app:layout_constraintTop_toTopOf="@+id/iv_bg"/>
+
+    <TextView
+        android:id="@+id/tv_shop_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x20"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="輕鬆熊大玩具毛茸茸的大玩具哈哈很好看"
+        android:textColor="@color/md_grey_700_color_code"
+        android:textSize="@dimen/x35"
+        app:layout_constraintLeft_toRightOf="@+id/iv_shop_picture"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_right_guideline"
+        app:layout_constraintTop_toTopOf="@+id/iv_shop_picture"/>
+
+    <TextView
+        android:id="@+id/tv_shop_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x20"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="顏色：棕色"
+        android:textColor="@color/md_grey_500_color_code"
+        android:textSize="@dimen/x30"
+        app:layout_constraintBottom_toTopOf="@+id/tv_shop_price"
+        app:layout_constraintLeft_toRightOf="@+id/iv_shop_picture"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_right_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/tv_shop_name"/>
+
+    <TextView
+        android:id="@+id/tv_shop_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x20"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="￥200"
+        android:textColor="@color/primaryPink"
+        android:textSize="@dimen/x45"
+        app:layout_constraintBottom_toTopOf="@+id/tv_shop_transport"
+        app:layout_constraintLeft_toRightOf="@+id/iv_shop_picture"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_right_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/tv_shop_type"/>
+
+    <TextView
+        android:id="@+id/tv_shop_transport"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x20"
+        android:ellipsize="end"
+        android:text="已發貨"
+        android:textColor="@color/md_grey_500_color_code"
+        android:textSize="@dimen/x30"
+        app:layout_constraintBottom_toTopOf="@+id/tv_shop_fee"
+        app:layout_constraintLeft_toRightOf="@+id/iv_shop_picture"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_right_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/tv_shop_price"/>
+
+    <TextView
+        android:id="@+id/tv_shop_fee"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x20"
+        android:ellipsize="end"
+        android:text="共 1 件商品 合計 ￥200"
+        android:textColor="@color/md_grey_700_color_code"
+        android:textSize="@dimen/x30"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_shop_picture"
+        app:layout_constraintLeft_toRightOf="@+id/iv_shop_picture"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_right_guideline"/>
+
+    <ImageView
+        android:id="@+id/iv_shop_icon"
+        android:layout_width="@dimen/x70"
+        android:layout_height="@dimen/x70"
+        android:src="@mipmap/ic_order_shop"
+        android:tint="@color/primaryYellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_left_guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52"/>
+</android.support.constraint.ConstraintLayout>

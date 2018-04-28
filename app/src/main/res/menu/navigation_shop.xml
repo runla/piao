@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_shop_car"
+        android:icon="@mipmap/ic_shop_car"
+        android:title="@string/shop_car" />
+
+    <item
+        android:id="@+id/navigation_shop_order"
+        android:icon="@mipmap/ic_shop_order"
+        android:title="@string/order" />
+
+    <item
+        android:id="@+id/navigation_shop_collect"
+        android:icon="@mipmap/ic_shop_collect"
+        android:title="@string/collect" />
+
+</menu>

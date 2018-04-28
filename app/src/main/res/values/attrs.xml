@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DrawableTextViewStyle">
+        <attr name="myDrawableLeftSize" format="dimension"></attr>
+        <attr name="myDrawableRightSize" format="dimension"></attr>
+        <attr name="myDrawableTopSize" format="dimension"></attr>
+        <attr name="myDrawableBottomSize" format="dimension"></attr>
+        <attr name="myDrawableLeft" format="reference"></attr>
+        <attr name="myDrawableRight" format="reference"></attr>
+        <attr name="myDrawableTop" format="reference"></attr>
+        <attr name="myDrawableBottom" format="reference"></attr>
+    </declare-styleable>
+    <declare-styleable name="LabelDrawableTextView">
+        <attr name="myDrawableColor" format="color"></attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="PowerfulEditText">
+        <!--功能的类型-->
+        <attr name="funcType">
+            <enum name="normal" value="-1" />
+            <enum name="canClear" value="0" />
+            <enum name="canWatchPwd" value="1" />
+        </attr>
+        <!--关闭查看密码的图标-->
+        <attr name="eyeClose" format="reference" />
+        <!--开启查看密码的图标-->
+        <attr name="eyeOpen" format="reference" />
+        <!--左侧Drawable的宽度-->
+        <attr name="leftDrawableWidth" format="dimension" />
+        <!--左侧Drawable的高度-->
+        <attr name="leftDrawableHeight" format="dimension" />
+        <!--右侧Drawable的宽度-->
+        <attr name="rightDrawableWidth" format="dimension" />
+        <!--右侧Drawable的高度-->
+        <attr name="rightDrawableHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="MaskImageView">
+        <attr name="radius" format="dimension"></attr>
+        <attr name="hasMaskPic">
+            <enum name="Yes" value="1"></enum>
+            <enum name="No" value="0"></enum>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ShopAmountView">
+        <!-- 左右2边+-按钮的宽度 -->
+        <attr name="btnWidth" format="dimension" />
+        <!-- 中间TextView的宽度 -->
+        <attr name="tvWidth" format="dimension" />
+        <!--<attr name="tvColor" format="color"/>-->
+        <attr name="tvTextSize" format="dimension"/>
+        <attr name="btnTextSize" format="dimension"/>
+    </declare-styleable>
+
+
+    <!--收藏自定义 View 样式-->
+    <declare-styleable name="LikeShape">
+        <attr name="like_selected" format="boolean"></attr>
+        <attr name="like_unSelectColor" format="color"></attr>
+        <attr name="like_selectColor" format="color"></attr>
+        <attr name="like_textSize" format="dimension"></attr>
+        <attr name="like_text" format="string"></attr>
+        <attr name="like_strockWidth" format="dimension"></attr>
+        <attr name="like_normalTyle" format="enum">
+            <enum name="fill" value="0"></enum>
+            <enum name="stroke" value="1"></enum>
+        </attr>
+
+    </declare-styleable>
+
+
+    <!-- 购物车计数器 -->
+    <declare-styleable name="NumberCounterView">
+        <attr name="num_etDefaultNum" format="integer"></attr>
+        <attr name="num_step" format="integer"></attr>
+        <attr name="num_btnTextSize" format="dimension"></attr>
+        <attr name="num_etTextSize" format="dimension"></attr>
+        <attr name="num_btnTextColor" format="color"></attr>
+        <attr name="num_btnBackgroud" format="color"></attr>
+        <attr name="num_etTextColor" format="reference"></attr>
+        <attr name="num_etBackground" format="reference"></attr>
+    </declare-styleable>
+</resources>

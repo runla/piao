@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/personBg"
+    tools:context="com.yinghai.piaowan.module.person.PersonActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/include_title"></include>
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="@dimen/x300"
+        android:layout_height="@dimen/x300"
+        android:src="@mipmap/pic_shop_tem_bg"
+        android:background="@drawable/shape_circle_white"
+        android:padding="@dimen/x20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline1"/>
+
+    <com.yinghai.piaowan.widget.DrawableTextView
+        android:id="@+id/tv_name"
+        android:layout_width="@dimen/x810"
+        android:layout_height="@dimen/y144"
+        android:layout_marginTop="@dimen/y10"
+        android:background="@mipmap/pic_person_item_bg"
+        android:paddingLeft="@dimen/x85"
+        android:text="姓名    陈坚润"
+        android:textSize="16sp"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circleImageView"/>
+
+    <com.yinghai.piaowan.widget.DrawableTextView
+        android:id="@+id/tv_phone"
+        android:layout_width="@dimen/x810"
+        android:layout_height="@dimen/y144"
+        android:background="@mipmap/pic_person_item_bg"
+        android:paddingLeft="@dimen/x85"
+        android:text="電話    13631232963"
+        android:textSize="16sp"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"/>
+
+    <com.yinghai.piaowan.widget.DrawableTextView
+        android:id="@+id/tv_point"
+        android:layout_width="@dimen/x810"
+        android:layout_height="@dimen/y144"
+        android:background="@mipmap/pic_person_item_bg"
+        android:paddingLeft="@dimen/x85"
+        android:text="積分    0"
+        android:textSize="16sp"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_phone"/>
+
+    <com.yinghai.piaowan.widget.DrawableTextView
+        android:id="@+id/tv_my_order"
+        android:layout_width="@dimen/x810"
+        android:layout_height="@dimen/y144"
+        android:layout_marginTop="@dimen/y70"
+        android:background="@mipmap/pic_person_item_bg"
+        android:paddingBottom="@dimen/x70"
+        android:paddingLeft="@dimen/x85"
+        android:paddingRight="@dimen/y104"
+        android:text="我的訂單"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_point"
+        app:myDrawableRight="@mipmap/ic_right"
+        app:myDrawableRightSize="@dimen/x40"/>
+
+    <com.yinghai.piaowan.widget.DrawableTextView
+        android:id="@+id/tv_my_address"
+        android:layout_width="@dimen/x810"
+        android:layout_height="@dimen/y144"
+        android:background="@mipmap/pic_person_item_bg"
+        android:paddingBottom="@dimen/x70"
+        android:paddingLeft="@dimen/x85"
+        android:paddingRight="@dimen/y104"
+        android:text="地址管理"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_my_order"
+        app:myDrawableRight="@mipmap/ic_right"
+        app:myDrawableRightSize="@dimen/x40"/>
+
+    <com.yinghai.piaowan.widget.DrawableTextView
+        android:id="@+id/tv_my_collect"
+        android:layout_width="@dimen/x810"
+        android:layout_height="@dimen/y144"
+        android:background="@mipmap/pic_person_item_bg"
+        android:paddingBottom="@dimen/x70"
+        android:paddingLeft="@dimen/x85"
+        android:paddingRight="@dimen/y104"
+        android:text="我的收藏"
+        android:textSize="16sp"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_my_address"
+        app:myDrawableRight="@mipmap/ic_right"
+        app:myDrawableRightSize="@dimen/x40"/>
+
+    <com.yinghai.piaowan.widget.DrawableTextView
+        android:id="@+id/tv_my_account"
+        android:layout_width="@dimen/x810"
+        android:layout_height="@dimen/y144"
+        android:background="@mipmap/pic_person_item_bg"
+        android:paddingBottom="@dimen/x70"
+        android:paddingLeft="@dimen/x85"
+        android:paddingRight="@dimen/y104"
+        android:text="賬號綁定"
+        android:textSize="16sp"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_my_collect"
+        app:myDrawableRight="@mipmap/ic_right"
+        app:myDrawableRightSize="@dimen/x40"/>
+</android.support.constraint.ConstraintLayout>

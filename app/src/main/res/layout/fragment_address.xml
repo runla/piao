@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_grey_100_color_code"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title"></include>
+
+    <include layout="@layout/item_address"></include>
+    <com.example.fansonlib.widget.recyclerview.AutoLoadRecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <com.yinghai.piaowan.widget.DrawableTextView
+        android:id="@+id/tv_edit_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/add_address"
+        android:textColor="@color/primaryBlue"
+        android:textSize="14sp"
+        app:myDrawableTop="@mipmap/ic_address_add"
+        app:myDrawableTopSize="40dp"/>
+</LinearLayout>

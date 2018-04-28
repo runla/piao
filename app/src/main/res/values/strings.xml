@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">票玩</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="account_login">賬號登錄</string>
+    <string name="wechat_login">微信登錄</string>
+    <string name="facebook_login">Facebook</string>
+    <string name="tourist_login">遊客登錄</string>
+    <string name="account_register">賬號註冊</string>
+    <string name="forget_password">忘記密碼</string>
+    <string name="login">登錄</string>
+    <string name="enter_phone">請輸入手機號碼</string>
+    <string name="enter_password">請輸入密碼</string>
+    <string name="register">註冊</string>
+    <string name="find_password">找回密碼</string>
+    <string name="find_password_success">找回密碼成功</string>
+    <string name="get_verify_code">獲取驗證碼</string>
+    <string name="enter_verify_code">請輸入驗證碼</string>
+    <string name="verify_code_has_send">驗證碼已發送</string>
+    <string name="secs_later">%d秒后再獲取</string>
+    <string name="buy_ticket">購票</string>
+    <string name="special_ticket_descripe">限定票內含禮品</string>
+    <string name="confirm_order">確認訂單</string>
+    <string name="update">修改</string>
+    <string name="normal_fee">正價票</string>
+    <string name="early_fee">早鳥票</string>
+    <string name="special_fee">限定票</string>
+    <string name="total_fee">總金額</string>
+    <string name="go_to_pay">確認支付</string>
+    <string name="person_info">個人中心</string>
+    <string name="my_order">我的訂單</string>
+    <string name="special_ticket_tip">入場時請出示二維碼掃描，限定禮品請在指定區域領取</string>
+    <string name="address">地址</string>
+    <string name="tel">電話</string>
+    <string name="name">名稱</string>
+
+
+    <string name="find_latest_version">發現新版本</string>
+    <string name="need_to_update">需要更新嗎？</string>
+    <string name="force_update">必須更新，否則無法使用</string>
+    <string name="wechat">微信</string>
+    <string name="account_has_bind">已綁定</string>
+    <string name="facebook">Facebook</string>
+    <string name="bind_account">賬號綁定</string>
+
+    <!-- 结果提示 -->
+    <string name="result_unknown">未知錯誤：</string>
+    <string name="loss_params">缺少必要參數</string>
+    <string name="password_format_error">密碼格式錯誤</string>
+    <string name="verify_code_error">驗證碼錯誤</string>
+    <string name="verify_code_useless">驗證碼過期</string>
+    <string name="account_has_exist">用户已存在</string>
+    <string name="reject_permission">拒絕權限會影響使用</string>
+    <string name="must_need_permission">沒有權限影響App的繼續運行，請前往設置允許權限</string>
+    <string name="address_manager">地址管理</string>
+    <string name="my_collect">我的收藏</string>
+    <string name="add_address">添加地址</string>
+    <string name="order_pay">訂單支付</string>
+    <string name="please_select_pay_type">請選擇付款方式</string>
+    <string name="piao_game">票玩遊戲</string>
+    <string name="topic">主題玩具</string>
+    <string name="shop_car">購物車</string>
+    <string name="order">訂單</string>
+    <string name="collect">收藏</string>
+    <string name="shop_add_to_car">加入購物車</string>
+    <string name="shop_buy_noew">立即購買</string>
+    <string name="no_transport_fee">包郵</string>
+    <string name="choose_color">選擇顏色</string>
+    <string name="collect_success">收藏成功</string>
+    <string name="select_all">全選</string>
+    <string name="copy">複製</string>
+    <string name="order_detail">訂單詳情</string>
+    <string name="confirm_pay">確認付款</string>
+    <string name="show_qrcode">入場請掃二維碼</string>
+    <string name="sure">確定</string>
+
+    <string-array name="order_tab">
+        <item>商品訂單</item>
+        <item>團體票</item>
+        <item>個體票</item>
+    </string-array>
+
+    <!-- 支付宝 -->
+    <string name="alipay_handler">正在处理中</string>
+    <string name="alipay_failure">订单支付失败</string>
+    <string name="alipay_repeat_pay">重复请求</string>
+    <string name="alipay_cancel">已取消支付</string>
+    <string name="alipay_net_error">网络连接出错</string>
+    <string name="sign_up">每日簽到</string>
+    <string name="game">小遊戲</string>
+    <string name="points">積分領取</string>
+    <string name="points_collect">積分領取</string>
+    <string name="btn_sign_up">簽到</string>
+    <string name="price_unit">$</string>
+    <string name="no_stock">已售完</string>
+    <string name="wechat_uninstall">沒有安裝微信</string>
+    <string name="wechat_param_has_null">微信請求的必要參數為 null</string>
+    <string name="wechat_pay_failure">微信支付失敗</string>
+    <string name="wechat_pay_cancel">微信支付取消</string>
+</resources>

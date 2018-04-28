@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yinghai.piaowan.module.main.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_ticket_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/pic_buy_ticket"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        app:layout_behavior="com.yinghai.piaowan.widget.RightBehavior">
+
+        <ImageView
+            android:id="@+id/iv_goto_shop"
+            android:layout_width="60dp"
+            android:layout_height="43dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x40"
+            android:background="@drawable/shape_right_bg_white"
+            android:padding="5dp"
+            android:src="@mipmap/ic_shop"/>
+    </RelativeLayout>
+
+    <include layout="@layout/include_activity_details"/>
+
+    <Button
+        android:id="@+id/btn_buy_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y140"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/y40"
+        android:layout_marginLeft="@dimen/x100"
+        android:layout_marginRight="@dimen/x100"
+        android:background="@drawable/ripple_btn_yellow"
+        android:text="@string/buy_ticket"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"/>
+
+
+    <include layout="@layout/include_title"></include>
+
+</android.support.design.widget.CoordinatorLayout>

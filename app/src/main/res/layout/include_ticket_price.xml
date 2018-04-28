@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_ticket_type"
+        android:layout_width="@dimen/x116"
+        android:layout_height="@dimen/y74"
+        android:src="@mipmap/pic_ticket_type_early_white"/>
+
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/tv_discount_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:textColor="@color/md_grey_700_color_code"
+        android:visibility="gone"
+        android:text="$111"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_norma_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:text="$1111"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        />
+
+    <com.yinghai.piaowan.widget.NumberCounterView
+        android:id="@+id/num_counter_view"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:num_btnBackgroud="@drawable/shape_btn_circle_white"
+        app:num_btnTextColor="@color/primaryYellow"
+        app:num_btnTextSize="16sp"
+        app:num_etBackground="@drawable/shape_btn_circle_white"
+        app:num_etTextColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/tv_no_stoke"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/md_grey_500_color_code"
+        android:textSize="18sp"
+        android:text="@string/no_stock"/>
+</merge>

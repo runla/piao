@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical">
+
+   <!-- <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/x70"
+        android:layout_height="@dimen/x70"
+        android:src="@drawable/tab_order_shop"/>-->
+
+    <com.yinghai.piaowan.widget.DrawableTextView
+        android:text="商品訂單"
+        android:id="@android:id/text1"
+        android:layout_marginTop="@dimen/y5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:myDrawableTop="@drawable/tab_order_shop"
+        android:textColor="@color/text_shop_add_car"/>
+
+
+
+</LinearLayout>

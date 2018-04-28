@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_grey_100_color_code"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_shop_picture"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/pic_shop_tem_bg"
+        app:layout_constraintBottom_toTopOf="@+id/top_guideline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/top_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.67"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="380dp"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/bottom_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.89"/>
+
+    <TextView
+        android:id="@+id/tv_shop_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginStart="@dimen/x40"
+        android:layout_marginTop="@dimen/y25"
+        android:text="$89"
+        android:textColor="@color/primaryBlue"
+        android:textSize="26sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/top_guideline"/>
+
+    <TextView
+        android:id="@+id/tv_shop_transport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginStart="@dimen/x40"
+        android:layout_marginTop="@dimen/y25"
+        android:text="@string/no_transport_fee"
+        android:textColor="@color/primaryPink"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_shop_price"
+        app:layout_constraintTop_toTopOf="@+id/top_guideline"/>
+
+
+    <TextView
+        android:id="@+id/tv_shop_description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginRight="@dimen/x40"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="3"
+        android:text="輕鬆熊輕鬆熊輕鬆熊輕鬆熊輕鬆熊輕鬆熊輕鬆熊輕鬆熊"
+        android:textColor="@color/md_grey_900_color_code"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_shop_style"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_shop_price"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_shop_price"/>
+
+    <TextView
+        android:id="@+id/tv_shop_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/choose_color"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_guideline"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_shop_price"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/shape_top_bg_white"
+        android:clipChildren="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottom_guideline"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/iv_shop_collect"
+            android:layout_width="@dimen/x90"
+            android:layout_height="@dimen/x90"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x80"
+            android:src="@mipmap/ic_shop_collect"/>
+
+        <ImageView
+            android:id="@+id/iv_shop_car"
+            android:layout_width="@dimen/x90"
+            android:layout_height="@dimen/x90"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x80"
+            android:layout_toRightOf="@+id/iv_shop_collect"
+            android:src="@mipmap/ic_shop_car"/>
+
+        <TextView
+            android:id="@+id/tv_add_to_car"
+            android:layout_width="@dimen/x240"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_toLeftOf="@+id/tv_buy_now"
+            android:background="@drawable/selector_add_to_car"
+            android:gravity="center"
+            android:padding="@dimen/x10"
+            android:text="@string/shop_add_to_car"
+            android:textColor="@color/text_shop_add_car"
+            android:textSize="@dimen/x42"/>
+
+        <TextView
+            android:id="@+id/tv_buy_now"
+            android:layout_width="@dimen/x240"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x80"
+            android:background="@drawable/selector_buy_now"
+            android:gravity="center"
+            android:padding="@dimen/x15"
+            android:text="@string/shop_buy_noew"
+            android:textColor="@color/text_shop_buy_now"
+            android:textSize="@dimen/x42"/>
+    </RelativeLayout>
+
+    <com.yinghai.piaowan.widget.LikeShape
+        android:id="@+id/like_collect"
+        app:like_text="@string/collect_success"
+        app:like_normalTyle="stroke"
+        app:like_selectColor="@color/primaryPink"
+        app:like_textSize="12dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/top_guideline"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <include layout="@layout/include_title"></include>
+</android.support.constraint.ConstraintLayout>

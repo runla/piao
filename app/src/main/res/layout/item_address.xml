@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="@dimen/x1020"
+        android:layout_height="@dimen/y405"
+        android:src="@mipmap/pic_item_normal_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontal_top_guideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontal_bottom_guideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.88" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_left_guideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.16" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_right_guideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <ImageView
+        android:id="@+id/iv_shop_icon"
+        android:layout_width="@dimen/x70"
+        android:layout_height="@dimen/x70"
+        android:src="@mipmap/ic_address"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_left_guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <TextView
+        android:id="@+id/tv_address_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/address"
+        android:textColor="@color/md_grey_800_color_code"
+        app:layout_constraintLeft_toRightOf="@+id/vertical_left_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal_top_guideline" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x15"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="址地址地址地址地址地址地址地址址地址地址地址地址地址地址地址"
+        android:textColor="@color/md_grey_600_color_code"
+        app:layout_constraintLeft_toRightOf="@+id/tv_address_text"
+        app:layout_constraintRight_toRightOf="@+id/vertical_right_guideline"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_top_guideline" />
+
+    <TextView
+        android:id="@+id/tv_name_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/name"
+        android:textColor="@color/md_grey_800_color_code"
+        app:layout_constraintBottom_toTopOf="@+id/tv_tel_text"
+        app:layout_constraintLeft_toRightOf="@+id/vertical_left_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/tv_address_text"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x15"
+        android:maxLines="1"
+        android:text="李雷"
+        android:textColor="@color/md_grey_600_color_code"
+        app:layout_constraintLeft_toRightOf="@+id/tv_name_text"
+        app:layout_constraintTop_toTopOf="@+id/tv_name_text" />
+
+    <TextView
+        android:id="@+id/tv_tel_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tel"
+        android:textColor="@color/md_grey_800_color_code"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_bottom_guideline"
+        app:layout_constraintLeft_toRightOf="@+id/vertical_left_guideline" />
+
+    <TextView
+        android:id="@+id/tv_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x15"
+        android:maxLines="1"
+        android:text="13666555555"
+        android:textColor="@color/md_grey_600_color_code"
+        app:layout_constraintLeft_toRightOf="@+id/tv_name_text"
+        app:layout_constraintTop_toTopOf="@+id/tv_tel_text" />
+
+    <TextView
+        android:id="@+id/tv_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y20"
+        android:maxLines="1"
+        android:text="删除"
+        android:textColor="@color/md_grey_400_color_code"
+        android:textSize="@dimen/x40"
+        android:layout_marginRight="@dimen/x20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tv_update" />
+
+    <TextView
+        android:id="@+id/tv_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="修改"
+        android:textColor="@color/primaryBlue"
+        android:textSize="@dimen/x40"
+        android:layout_marginBottom="@dimen/y20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_right_guideline"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="@dimen/x1020"
+        android:layout_height="@dimen/y405"
+        android:src="@mipmap/pic_item_special_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontal_guideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.39" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_left_guideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.23" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_right_guideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.88" />
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/y7"
+        android:background="@color/md_grey_100_color_code"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_bear"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/vertical_left_guideline"
+        app:layout_constraintRight_toRightOf="@+id/vertical_right_guideline" />
+
+    <TextView
+        android:id="@+id/tv_activity_topic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/x13"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:text="蠟筆小新我們的美好時光（澳門特展）"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_bear"
+        app:layout_constraintLeft_toRightOf="@+id/iv_bear"
+        app:layout_constraintRight_toRightOf="@+id/vertical_right_guideline"
+        app:layout_constraintTop_toTopOf="@+id/iv_bear" />
+
+    <ImageView
+        android:id="@+id/iv_bear"
+        android:layout_width="@dimen/x79"
+        android:layout_height="@dimen/y92"
+        android:layout_marginLeft="@dimen/x25"
+        android:src="@mipmap/pic_bear"
+        app:layout_constraintBottom_toBottomOf="@+id/horizontal_guideline"
+        app:layout_constraintLeft_toLeftOf="@+id/line" />
+
+    <ImageView
+        android:id="@+id/iv_ticket_type"
+        android:layout_width="@dimen/x192"
+        android:layout_height="@dimen/y122"
+        android:src="@mipmap/pic_ticket_type_early"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tv_activity_tip"
+        app:layout_constraintLeft_toLeftOf="@+id/line"
+        app:layout_constraintRight_toLeftOf="@+id/iv_QR_code"
+        app:layout_constraintTop_toBottomOf="@+id/line" />
+
+    <ImageView
+        android:id="@+id/iv_QR_code"
+        android:layout_width="@dimen/y122"
+        android:layout_height="@dimen/y122"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@mipmap/pic_qr_code"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tv_activity_tip"
+        app:layout_constraintLeft_toRightOf="@+id/iv_ticket_type"
+        app:layout_constraintRight_toRightOf="@+id/line"
+        app:layout_constraintTop_toBottomOf="@+id/line" />
+
+    <TextView
+        android:id="@+id/tv_activity_tip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y20"
+        android:gravity="center"
+        android:text="@string/special_ticket_tip"
+        android:textSize="@dimen/x24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/vertical_left_guideline"
+        app:layout_constraintRight_toRightOf="@id/vertical_right_guideline" />
+
+    <ImageView
+        android:id="@+id/iv_ticket_icon"
+        android:layout_width="@dimen/x70"
+        android:layout_height="@dimen/x70"
+        android:src="@mipmap/ic_order_ticket_norma"
+        android:tint="@color/primaryYellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/line"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55" />
+</android.support.constraint.ConstraintLayout>

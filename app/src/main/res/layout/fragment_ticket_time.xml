@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_grey_100_color_code"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/include_title"></include>
+
+    <RelativeLayout
+        android:id="@+id/rl_single_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y135"
+        android:layout_below="@+id/title"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/x80"
+        android:paddingRight="@dimen/x80">
+
+        <com.yinghai.piaowan.widget.DrawableTextView
+            android:id="@+id/tv_single"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="單人票"
+            android:textColor="@color/text_ticket_type"
+            android:textSize="@dimen/x30"
+            app:myDrawableTop="@drawable/selector_single_ticket"
+            app:myDrawableTopSize="@dimen/x65"/>
+
+        <com.yinghai.piaowan.widget.LikeShape
+            android:id="@+id/like_single"
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/x80"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:like_selectColor="@color/primaryBlue"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_single_normal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y150"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/shape_top_bg_yellow"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/y15"
+        android:paddingLeft="@dimen/x60"
+        android:paddingRight="@dimen/x60"
+        android:paddingTop="@dimen/y15"
+        android:layout_marginRight="@dimen/x80"
+        android:layout_below="@+id/rl_single_ticket"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView">
+
+        <include layout="@layout/include_ticket_price"></include>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linear_single_special"
+        android:layout_alignLeft="@+id/linear_single_special"
+        android:layout_alignTop="@+id/linear_single_special"
+        android:src="@mipmap/ic_ticket_limit"
+        android:id="@+id/imageView"/>
+
+    <LinearLayout
+        android:id="@+id/linear_single_special"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y150"
+        android:layout_below="@+id/linear_single_normal"
+        android:layout_marginBottom="@dimen/y80"
+        android:layout_marginLeft="@dimen/x80"
+        android:layout_marginRight="@dimen/x80"
+        android:layout_marginTop="@dimen/y40"
+        android:background="@drawable/shape_top_bg_grey"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/y15"
+        android:paddingLeft="@dimen/x120"
+        android:paddingRight="@dimen/x60"
+        android:paddingTop="@dimen/y15">
+
+        <include layout="@layout/include_ticket_price"></include>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/x170"
+        android:layout_height="@dimen/y185"
+        android:layout_alignBottom="@+id/linear_single_special"
+        android:layout_marginLeft="@dimen/x66"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_ticket_limit"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_multi_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y135"
+        android:layout_below="@+id/linear_single_special"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/x80"
+        android:paddingRight="@dimen/x80"
+        android:visibility="gone">
+
+        <com.yinghai.piaowan.widget.DrawableTextView
+            android:id="@+id/tv_multi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="團體票"
+            android:textColor="@color/text_ticket_type"
+            android:textSize="@dimen/x30"
+            app:myDrawableTop="@drawable/selector_multi_ticket"
+            app:myDrawableTopSize="@dimen/x65"/>
+
+        <com.yinghai.piaowan.widget.LikeShape
+            android:id="@+id/like_multi"
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/x80"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:like_selectColor="@color/primaryBlue"/>
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_buy_ticket_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_single_special"
+        android:layout_marginTop="@dimen/y30"
+        android:gravity="center"
+        android:text="@string/special_ticket_descripe"
+        android:textColor="@color/primaryBlue"/>
+
+    <Button
+        android:id="@+id/btn_confirm_buy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y140"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/y30"
+        android:layout_marginLeft="@dimen/x220"
+        android:layout_marginRight="@dimen/x220"
+        android:layout_marginTop="@dimen/y30"
+        android:background="@drawable/ripple_btn_blue"
+        android:text="@string/confirm_order"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+</RelativeLayout>
